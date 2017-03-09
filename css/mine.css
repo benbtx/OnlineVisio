@@ -1,0 +1,226 @@
+﻿body{
+    width:1600px;
+    height:810px;   
+    margin:10px auto; 
+}
+.allPage{
+    width:1600px;
+    height:810px;
+    border:1px solid black;
+}
+.control{
+    width:300px;
+    height:810px;
+    background-color:#6DD5E4;
+    float:left;
+}
+.headTitle{
+    text-align:center;
+    color:white;
+    height:20px;
+    margin-bottom:40px;
+}
+.controlType{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+ }
+.controlType li{
+    line-height:50px;
+    text-align:center;
+    margin:auto auto;
+    color:white;
+    float:left;
+}
+.controlType li a{
+    display:block;
+    text-decoration:none;
+    color:white;
+    width:98px;
+    height:50px;
+    border:1px solid white;
+}
+#constant{
+    height:100px;
+    float:left;
+}
+#constant ul{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+}
+#constant ul li{
+    margin:15px 0px;
+    float:left;
+}
+#constant ul li input{
+    width:60px;
+    height:50px;
+    line-height:50px;
+    display:block;
+    float:left;
+    color:white;
+    background-color:#6DD5E4;
+    margin-left:15px;
+}
+#constant ul li span{
+    width:80px;
+    height:50px;
+    line-height:50px;
+    display:block;
+    float:left;
+    text-align:center;
+}
+#parameter{
+    height:100px;
+    float:left;
+    display:none;
+}
+#parameter ul{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+}
+#parameter ul li{
+    margin:15px 0px;
+    float:left;
+}
+#parameter ul li input{
+    width:60px;
+    height:50px;
+    line-height:50px;
+    display:block;
+    float:left;
+    color:white;
+    background-color:#6DD5E4;
+    margin-left:15px;
+}
+#parameter ul li span{
+    width:80px;
+    height:50px;
+    line-height:50px;
+    display:block;
+    float:left;
+    text-align:center;
+}
+#functionContent{
+    height:677px;
+    width:300px;
+    overflow:scroll;
+    float:left;
+    display:none;
+}
+#functionContent ul{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+}
+#functionContent ul li {
+    margin:10px 0px;
+    float:left;
+}
+
+#functionContent ul h2{
+    width:280px;
+    text-align:center;
+    margin:30px 0px 0px 0px;
+    padding:0px;
+    float:left;
+}
+#functionContent ul li input{
+    width:60px;
+    height:50px;
+    line-height:50px;
+    display:block;
+    float:left;
+    color:white;
+    background-color:#6DD5E4;
+    margin-left:15px;
+}
+#functionContent ul li span{
+    width:65px;
+    height:50px;
+    line-height:50px;
+    display:block;
+    float:left;
+    text-align:center;
+}
+.draw{
+    float:left;
+}
+.buttonGroup{
+    position:relative;
+    top:-3px;
+    height:55px;
+    background-color:#6DD5E4;
+}
+.buttonGroup input{
+    width:200px;
+    height:40px;
+    display:block;
+    float:left;
+    margin:5px 60px;
+    font-size:14px;
+}
+.textBox{
+    width:298px;
+    height:810px;
+    float:left;
+    background-color:#6DD5E4;
+}
+.textBox ul{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+}
+.textBox ul li{
+    width:285px;
+    height:40px;
+    float:left;
+    margin:30px 20px;
+}
+.textBox ul li span{
+    width:80px;
+    height:30px;
+    line-height:30px;
+    display:block;
+    float:left;
+}
+.textBox ul li input{
+    width:150px;
+    height:30px;
+    line-height:30px;
+    display:block;
+    float:left;
+}
+#variableButton:hover{
+    border-bottom-color: #6DD5E4;
+}
+#parameterButton:hover{
+    border-bottom-color: #6DD5E4;
+}
+#functionButton:hover{
+    border-bottom-color: #6DD5E4;
+}
+#createInputGroup{
+    height:900px;
+}
+#createInputGroup ul{
+    height:900px;
+}
+.inputBox{
+    height:100px;
+    width:300px;
+    position:absolute;
+    top:000px;
+    left:800px;
+    background-color:#6DD5E4;
+    display:none;
+}
+.inputGroup{
+    width:270px;
+    margin:40px 0 10px 15px;
+}
+#inputSure{
+    margin:0 0 0 130px;
+}

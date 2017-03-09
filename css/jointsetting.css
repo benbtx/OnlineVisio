@@ -1,0 +1,235 @@
+﻿#paper-html-elements {
+    position: relative;
+    border: 1px solid gray;
+    display: inline-block;/*只有变为这个属性，才能使得边框刚好为可用区域的面积*/
+    background: transparent;
+    overflow: hidden;
+}
+#paper-html-elements svg {
+    background: transparent;
+}
+#paper-html-elements svg .link {
+    z-index: 2;
+}
+.html-element {
+    position: absolute;/*如果没有这个属性那么边框和连线就对应不上*/
+    pointer-events: none;/* 确保拖动事件正常.*/
+    background: #4DBAFA;
+    border-radius: 4px;
+    border: 2px solid black;
+    padding: 5px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+.html-element select{
+    pointer-events: auto;/* 启用只与输入交互. */
+}
+.html-element input{
+    pointer-events: auto;/* 启用只与输入交互. */
+}
+.html-element button {
+    pointer-events: auto;/* 启用只与输入交互. */
+
+}
+.html-element button.chooseButton {
+    color: white;
+    border: none;
+    background-color: #4DBAFA;
+    border-radius: 4px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: middle;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+.html-element button.chooseButton:hover {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+}
+.html-element button.deleteButton {
+    color: white;
+    border: none;
+    background-color: red;
+    border-radius: 20px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: middle;
+    position: absolute;
+    top: -15px;
+    left: 95px;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    cursor: pointer;
+    display:none;
+}
+.html-element button.inputButton {
+    color: white;
+    border: none;
+    background-color: black;
+    border-radius: 20px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: middle;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    cursor: pointer;
+    display:none;
+}
+.html-element button.inputButton:hover {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+.html-element button.deleteButton:hover {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+.html-element button.leftButton {
+    color: white;
+    border: none;
+    background-color: black;
+    border-radius: 20px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: middle;
+    position: absolute;
+    top: 47px;
+    left: -15px;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    cursor: pointer;
+    display:none;
+}
+.html-element button.leftButton:hover {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+.html-element button.rightButton {
+    color: white;
+    border: none;
+    background-color: black;
+    border-radius: 20px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: middle;
+    position: absolute;
+    top: 47px;
+    left: 95px;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    cursor: pointer;
+    display:none;
+}
+.html-element button.rightButton:hover {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+.html-element label {
+    position: absolute;
+    bottom: 7px;
+    left: 3px;
+    right: 0;
+    border: none;
+    color: white;
+    padding: 5px;
+    height: 9px;
+    width:80%;
+    background: transparent;
+    display:block;
+    text-align:center;
+    font-size: 17px;
+    font-weight: bold;
+    /*border:1px solid black;*/
+}
+.html-element span {
+    display:block;
+    text-align:center;
+    color: black;
+    font-weight: bold;
+}
+.html-element select {
+    font-weight: bold;
+    position:relative;
+    top:-17px;
+    left:17px;
+    background: transparent;
+    border:1px solid black;
+}
+
+/*会被隐藏的部分*/
+.html-element input {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 0;
+    border: none;
+    padding: 5px;
+    height: 9px;
+    width:80%;
+    background: white;
+    display:block;
+    text-align:center;
+    font-size: 17px;
+    font-weight: bold;
+    border:1px solid black;
+    display: none;
+}
+.html-element button.sureButton {
+    color: white;
+    border: none;
+    background-color: #4DBAFA;
+    border-radius: 1px;
+    width: 40px;
+    height: 17px;
+    line-height: 15px;
+    text-align: middle;
+    position: absolute;
+    top: 30px;
+    left: 4px;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    cursor: pointer;
+    border:1px solid black;
+    display: none;
+}
+.html-element button.cancelButton {
+    color: white;
+    border: none;
+    background-color: #4DBAFA;
+    border-radius: 1px;
+    width: 40px;
+    height: 17px;
+    line-height: 15px;
+    text-align: middle;
+    position: absolute;
+    top: 30px;
+    left: 53px;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    cursor: pointer;
+    border:1px solid black;
+    display: none;
+}

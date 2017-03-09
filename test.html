@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>在线流程图</title>
+    <link type="text/css" rel="stylesheet" href="css/joint.css" />
+    <link type="text/css" rel="stylesheet" href="css/jointsetting.css" />
+    <link type="text/css" rel="stylesheet" href="css/mine.css" />
+</head>
+<body>
+
+<div class="allPage">
+    <div class="control">
+        <h1 class="headTitle">控件类型</h1>
+        <ul class="controlType">
+            <li><a id="variableButton" href="#">变量</a></li>
+            <li><a id="parameterButton" href="#">参量</a></li>
+            <li><a id="functionButton" href="#">函数</a></li>
+        </ul>
+        <div id="constant">
+            <ul>
+                <li><input type="button" value="NUM" onclick="addingInt()"/><span>数值</span></li>
+                <li><input type="button" value="TEXT" onclick="addingString()"/><span>文本</span></li>
+                <li><input type="button" value="BOOL" onclick="addingBool()"/><span>布尔</span></li>
+                <li><input type="button" value="DATE" onclick="addingDate()"/><span>日期</span></li>
+                <li><input type="button" value="TIME" onclick="addingTime()"/><span>时间</span></li>
+                <li><input type="button" value="T-STP" onclick="addingSTP()"/><span>时间戳</span></li>
+            </ul>
+        </div>
+        <div id="parameter">
+            <ul>
+                <li><input type="button" value="NUM" onclick="addingInt()"/><span>数值</span></li>
+                <li><input type="button" value="TEXT" onclick="addingString()"/><span>文本</span></li>
+                <li><input type="button" value="BOOL" onclick="addingBool()"/><span>布尔</span></li>
+                <li><input type="button" value="DATE" onclick="addingDate()"/><span>日期</span></li>
+                <li><input type="button" value="TIME" onclick="addingTime()"/><span>时间</span></li>
+                <li><input type="button" value="T-STP" onclick="addingSTP()"/><span>时间日期</span></li>
+            </ul>
+        </div>
+        <div id="functionContent">
+            <ul>
+                <h2>逻辑函数</h2>
+                <li><input type="button" value="NOT" onclick="addingInt()"/><span>非</span></li>
+                <li><input type="button" value="AND" onclick="addingString()"/><span>与</span></li>
+                <li><input type="button" value="OR" onclick="addingBool()"/><span>或</span></li>
+                <li><input type="button" value="NAND" onclick="addingDate()"/><span>与非</span></li>
+                <li><input type="button" value="NOR" onclick="addingTime()"/><span>或非</span></li>
+                <li><input type="button" value="XOR" onclick="addingSTP()"/><span>同或</span></li>
+                <li><input type="button" value="XNOR" onclick="addingSTP()"/><span>异或</span></li>
+                <h2>数学运算函数</h2>
+                <li><input type="button" value="X+Y" onclick="addingInt()"/><span>加法</span></li>
+                <li><input type="button" value="X-Y" onclick="addingString()"/><span>减法</span></li>
+                <li><input type="button" value="X*Y" onclick="addingBool()"/><span>乘法</span></li>
+                <li><input type="button" value="X/Y" onclick="addingDate()"/><span>除法</span></li>
+                <li><input type="button" value="X%Y" onclick="addingTime()"/><span>取余</span></li>
+                <li><input type="button" value="XMODY" onclick="addingSTP()"/><span>取模</span></li>
+                <li><input type="button" value="X的Y方" onclick="addingSTP()"/><span>乘方</span></li>
+                <li><input type="button" value="√" onclick="addingInt()"/><span>开方</span></li>
+                <li><input type="button" value="-X" onclick="addingString()"/><span>取反</span></li>
+                <li><input type="button" value="1/X" onclick="addingBool()"/><span>倒数</span></li>
+                <li><input type="button" value="|X|" onclick="addingDate()"/><span>绝对值</span></li>
+                <li><input type="button" value="[X]" onclick="addingTime()"/><span>四舍五入</span></li>
+                <li><input type="button" value="[X+]" onclick="addingSTP()"/><span>向上取整</span></li>
+                <li><input type="button" value="[X-]" onclick="addingSTP()"/><span>向下取整</span></li>
+                <h2>条件判断函数</h2>
+                <li><input type="button" value="NILL" onclick="addingInt()"/><span>空</span></li>
+                <li><input type="button" value="NONILL" onclick="addingString()"/><span>非空</span></li>
+                <li><input type="button" value="==" onclick="addingBool()"/><span>等于</span></li>
+                <li><input type="button" value="!=" onclick="addingDate()"/><span>不等于</span></li>
+                <li><input type="button" value=">" onclick="addingTime()"/><span>大于</span></li>
+                <li><input type="button" value="<" onclick="addingSTP()"/><span>小于</span></li>
+                <li><input type="button" value=">=" onclick="addingSTP()"/><span>大于等于</span></li>
+                <li><input type="button" value="<=" onclick="addingInt()"/><span>小于等于</span></li>
+                <li><input type="button" value="PREFIX" onclick="addingString()"/><span>前缀</span></li>
+                <li><input type="button" value="POSTFIX" onclick="addingBool()"/><span>后缀</span></li>
+                <li><input type="button" value="CONTAIN" onclick="addingDate()"/><span>包含</span></li>
+                <li><input type="button" value="MATCH" onclick="addingTime()"/><span>匹配</span></li>
+                <h2>字符操作函数</h2>
+                <li><input type="button" value="LEN" onclick="addingInt()"/><span>计算长度</span></li>
+                <li><input type="button" value="UPPER" onclick="addingString()"/><span>转为大写</span></li>
+                <li><input type="button" value="LOWER" onclick="addingBool()"/><span>转为小写</span></li>
+                <li><input type="button" value="CONCAT" onclick="addingDate()"/><span>连接</span></li>
+                <li><input type="button" value="CHARAT" onclick="addingTime()"/><span>取字符</span></li>
+                <li><input type="button" value="SUBSTR" onclick="addingSTP()"/><span>取字串</span></li>
+                <li><input type="button" value="REPLAC" onclick="addingSTP()"/><span>替换字符</span></li>
+                <h2>汇总统计函数</h2>
+                <li><input type="button" value="SUM" onclick="addingInt()"/><span>求和</span></li>
+                <li><input type="button" value="AVG" onclick="addingString()"/><span>求平均</span></li>
+                <li><input type="button" value="COUNT" onclick="addingBool()"/><span>计数</span></li>
+                <li><input type="button" value="MAX" onclick="addingDate()"/><span>最大值</span></li>
+                <li><input type="button" value="MIN" onclick="addingTime()"/><span>最小值</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="draw">
+        <div id="paper-html-elements"> 
+        </div>
+        <div class="buttonGroup">
+            <input type="button" value="保 存" id="testSave"/>
+            <input type="button" value="恢 复" id="testGet"/>
+            <input type="button" value="清 除" id="testclean"/>
+        </div>
+    </div>
+    <div class="textBox">
+        <h1 class="headTitle">元素属性值</h1>
+        <ul>
+            <li><span>编号:</span><input type="text" value="" id="numberText"/></li>
+            <li><span>属性:</span><input type="text" value="" id="propertiesText"/></li>
+            <li><span>赋值:</span><input type="text" value="" id="valueText"/></li>
+            <li><span>X坐标:</span><input type="text" value="" id="xposition"/></li>
+            <li><span>Y坐标:</span><input type="text" value="" id="yposition"/></li>
+        </ul>
+        <div id="createInputGroup">
+        </div>
+    </div>
+<!--时间插件-->
+<!--input onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})"-->
+<input onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/lodash.js"></script>
+<script src="js/backbone.js"></script>
+<script src="js/joint.js"></script>
+<script src="laydate/laydate.js"></script>
+<script src="js/mine.js"></script>
+</body>
+</html>
